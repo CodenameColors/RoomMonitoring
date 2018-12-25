@@ -10,7 +10,7 @@ exports.up = function(knex, Promise) {
 		  table.increments().primary() //primary key ID
 		  table.string('fname').notNullable()
 		  table.string('lname').notNullable()
-		  table.string('group').notNullable()
+		  table.integer('importance').notNullable()
 	  }),
 	])
 };
